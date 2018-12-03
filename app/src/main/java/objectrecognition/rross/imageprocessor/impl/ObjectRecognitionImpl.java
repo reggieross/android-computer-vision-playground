@@ -26,7 +26,7 @@ import okhttp3.Response;
 
 public class ObjectRecognitionImpl implements IObjectRecognition {
 
-    private String API_KEY;
+    private String API_KEY = "9eb1cd61cf8f42299c375250504053a3";
     private static String URI_SCHEME = "https";
     private UriComponents predictionURI;
 
@@ -40,7 +40,6 @@ public class ObjectRecognitionImpl implements IObjectRecognition {
             svcEndPoint,
             iterationID
         );
-        API_KEY = System.getenv("OBJ_RECOG_API_KEY");
     }
 
     public UriComponents getPredictionURI() {

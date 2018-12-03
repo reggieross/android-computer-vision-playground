@@ -7,7 +7,7 @@ import com.amazonaws.regions.Regions;
 
 public class AwsCredintials {
 
-    private String COGNITO_POOL_ID = "us-east-1:4f3d494f-f78f-4165-9e42-1c2b8cec3fd0";
+    private String COGNITO_POOL_ID = "us-east-1:4f3d494f-f78f-4165-9e42-1c2b8cec3fd0\n";
     private CognitoCachingCredentialsProvider credentialsProvider;
     private Context context;
     private Regions region;
@@ -23,8 +23,6 @@ public class AwsCredintials {
             COGNITO_POOL_ID,
             region
         );
-
-        COGNITO_POOL_ID = System.getenv("OBJ_RECOD_POOL_ID");
     }
 
     public CognitoCachingCredentialsProvider getCredentialsProvider() {
